@@ -1,0 +1,11 @@
+Make a "Caring for your pet cat" simulator 3d game. Any web tech stack. WebGL. Compile down to single HTML file.
+ 
+  Requirements:
+  - Cute 3d cats.
+ 
+  Scenes:
+  - Adopt a cat. Basically character creation. Customize the coat, customize the meow, and so on.
+  - Feed the cat.
+  - Pet the cat.
+  - Play with the cat.
+  - Deal with the litter box.

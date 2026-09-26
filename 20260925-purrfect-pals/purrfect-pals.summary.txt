@@ -1,0 +1,32 @@
+● I've built Purrfect Pals — Caring for your pet cat. It's one self-contained file: dist/purrfect-pals.html (646 KB, Three.js/WebGL). Open it in a browser; it needs
+  no server or network, and progress saves to localStorage.
+
+  I played it through end to end in headless Chromium. Adoption, all five care scenes, customization, the menu, and save → reload → continue all work with no       
+  console errors, and I checked a phone-sized screen too. I couldn't listen to any audio. The meows, purring and sound effects are all synthesized in code. I       
+  rendered every meow style offline and checked the signal: none are silent and none clip. How they actually sound is untested, so that's the thing to check first. 
+
+  The cats are built from simple shapes, with an outline for a cartoon look. The coat pattern is painted by a shader, so stripes and patches flow smoothly across   
+  the body, head, legs and tail. They blink, twitch their ears, blush, make happy ^^ eyes, and look at whatever you're doing.
+
+  Scenes
+  - Adopt: you start with a random shelter kitty and customize it on a turntable. There are 8 coat patterns (solid, tabby, tuxedo, calico, tortie, pointed, spotted,
+    van) with colours and white markings. You can also change the eyes (including odd eyes), nose, head, ears, body build, legs, tail, fluffiness, and collar/bell. 
+    For the meow there are 7 styles plus pitch, length and raspiness sliders, with a preview. The ✂️ button lets you restyle the cat later.
+  - Home: the cat roams on its own. It naps, watches the window, eats if food is out, uses the litter box, gets the zoomies, and meows with a thought bubble when a 
+    need is low.
+  - Feed: pour kibble from the bag (it can overflow the bowl), spoon out wet food, toss treats, or refill the water. Eating too many treats gets a gentle warning,  
+    and a full cat turns its nose up.
+  - Pet: stroke with a hand or a brush. Cheeks and chin are the favourites; the tail and face are not. Petting brings purring and kneading. Too much rough handling 
+    earns a swat. A very content cat rolls over to show its belly, which is a trap (bunny kicks).
+  - Play:
+    - Feather wand: the cat stalks, wiggles its butt, then pounces.
+    - Laser pointer: an endless chase with no catch, plus a tip about ending on a real toy.
+    - Yarn ball: throw it and the cat bats it around.
+  - Litter: scoop clumps and drag them into the bin, top up or change the litter, or tap "Nature calls" to watch the cat use the box. It refuses a dirty box.       
+
+  Four needs (food, love, fun, litter) slowly drop over time and add up to the cat's mood face.
+
+  To rebuild after editing: python3 build.py. It uses a standalone esbuild and a copy of three.js stored in the project, so Node isn't needed. The README covers the
+  file layout, and dev/ holds the screenshot test helpers I used.
+
+✻ Brewed for 1h 2m 5s · done 8:21 PM
