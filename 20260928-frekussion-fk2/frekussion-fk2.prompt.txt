@@ -1,0 +1,11 @@
+First grab this public repo: https://github.com/mkforsb/synkussion-sk1-slop
+
+Let's build a new synthesizer similar to the Synkussion SK-1. What I have in mind is the same focus on percussive sounds/envelopes, the same dual-channel setup with per-channel reverb, but with a complete focus on FM, including modulation between the two channels. Each channel should also be a fairly capable FM voice by itself, possibly each with a dedicated separate noise oscillator. We're looking for all types of percussive sounds. Everything from traditional drum sounds to metallic clangs and discordant and hollow hits and stabs.
+
+For inspiration, WebSearch for things like "FM percussive sounds", "FM percussion synthesis", "Elektron model cycles"
+
+I'll let you pick a name for the new synth :)
+
+We'll stick to Rust/Dioxus and keep the same dual build targets (desktop and web)
+
+Have fun!
