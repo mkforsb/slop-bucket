@@ -1,0 +1,39 @@
+First grab the public repo https://github.com/mkforsb/xenokussion-xk1-slop
+
+Let's build a new synthesizer heavily based on Xenokussion XK-1, but quite a different machine.
+
+We're sticking to Rust/Dioxus and the dual target of Web and Desktop.
+
+This time, rather than percussive sounds, we're looking for ambient atmosphere drone sounds.
+I'm thinking we essentially take an XK-1 but without the UI, we turn up both MUTATE knobs to max,
+and simulate hitting Space. We sample (render) the output instead of playing it, using signal
+strength to detect the end of the current sound. Then we apply something very similar to PaulStretch
+to stretch and smear the sound in an extreme fashion.
+
+I'm thinking the new UI could have a couple of controls to influence the underlying XK-1, such as
+setting the amount of MUTATE to be applied (maximum by default), picking which engines should be active
+(available for the random choice applied by MUTATE, all engines by default), and perhaps a control to
+influence the pitch. Maybe more if you can come up with some.
+
+Most importantly, the new UI should have the following three controls:
+
+- Play/stop: starts and stops the drone machine/synth
+- Hit frequency / pattern: slider to control how often a new XK-1 hit is generated (essentially a
+  simulated press of Space) and rendered and eventually mixed into the PaulStretch output stream,
+  perhaps with different settings for intervals, such as Euclidean.
+- Stretch factor: the amount of stretching applied in the PaulStretch algorithm, similar to the
+  original program where you could pick e.g. "50.0x" to stretch a 1-second sound to 50 seconds.
+
+Finally, the final stretched output should go into it's own dedicated effects section where we'll
+have another Dattorro reverb, this time also with a shimmer setting, and we'll also have a spacey
+ping-pong stereo delay with feedback and interesting damping modes (e.g. band pass filter on each
+feedback) and perhaps also some interesting intervals beyond the regular N milliseconds.
+Both the reverb and feedback should be able to be turned completely off.
+
+The synth should be able to figure out how many hits to keep pre-rendered in order to be able to
+feed the PaulStretch output stream according to the current parameters.
+
+For inspiration, WebSearch for "paulstretch", "drone synths", "techno atmosphere drones", "ambient
+techno drones", "shimmer reverb", "space echo".
+
+Clearly experimental stuff, so have fun with it! And pick a cool name!

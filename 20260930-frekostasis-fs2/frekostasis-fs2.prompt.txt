@@ -1,0 +1,1 @@
+Let's cdup and do the same thing we just did, but this time based on the FM variant @/mnt/-tmp-claude/frekussion/. I.e. let's build Frekostasis(?) :)
