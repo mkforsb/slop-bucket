@@ -1,0 +1,5 @@
+And now for a strange experiment:
+
+Make a copy of Palmkussion, replace the Palmkussion drum synth engines with the original set of Xenokussion engines, reintroduce a MUTATE knob [0..RND] on each channel (each of the two drums) that is applied on each hit (even hits from the sequencer, although not on individual hits of rolls or trills).
+
+No idea what to call this one :)
