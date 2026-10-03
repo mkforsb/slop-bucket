@@ -1,0 +1,23 @@
+First grab the public repo https://github.com/mkforsb/xenokussion-xk1-slop
+
+Let's build a new synth/machine taking inspiration from Xenokussion. We'll stick to Rust/Dioxus Web/Desktop, we'll reuse the core audio engine(s) and the reverb. We'll be picking the most suitable synthesis engine(s), keeping some of the randomization features, but after that we're making some quite radical changes.
+
+Main idea: a Conga/Bongo/Djembe/Wood block performance simulator synth.
+
+Main features:
+- Synthesis of Conga, Bongo, Djembe, Wood block type percussive hits with variation based on velocity and strike position (centre of drum vs rim)
+- A performance sequencer ranging from dead simple identical hits on every step, to wildly humanized sequences with variation (ranging from subtle to not-so-subtle) in velocities and strike positions, including trills and flourishes, dual hits (each hand hitting one drum, simultaneously), and so on. We're looking to capture some of the parameters of a real musician playing one of these instruments.
+- The performance sequencer should support both careful exact programming and generative / randomization-based programming.
+- Adjustable swing and humanization (slight variations) for hit timings.
+- Adjustable sequence length and master tempo.
+- Ability to trigger single hits using the PC keyboard, with some variation across the keys.
+- We'll add a basic EQ (low, mid, hi) to the reverb.
+
+Dream:
+- Hit the RND ALL button, get a realistic-sounding Conga beat with subtle variation, tune the drum synth a bit to find the perfect sound, increase the velocity sensitivity a bit to make harder hits more snappy, pick some of the beats to increase velocity on to get a groove, find an opening for a trill and add it to the sequencer manually. Instant looping hand drum goodness.
+
+For inspiration, WebSearch things like \"conga technique\", \"conga patterns\", \"conga trills and rolls\", same for the other types (bongo, djembe, wood block), \"conga synthesis algorithms\", \"bongo synth algorithm\" and so on.
+
+Be creative, don't be afraid to experiment.
+
+Name of the machine is up to you. Have fun!
