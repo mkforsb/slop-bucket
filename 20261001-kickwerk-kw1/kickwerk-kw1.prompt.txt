@@ -1,0 +1,47 @@
+First grab the public repo https://github.com/mkforsb/synkussion-sk1-slop
+
+Taking inspiration from Synkussion (Rust/Dioxus, Web/WebAudio, Desktop/PulseAudio, parts
+of the UI style) I want us to build an incredible "main kick" machine for Techno/EDM.
+
+Quite different from Synkussion, this new machine needs to be modular. We'll need a canvas
+onto which we can add/remove modules, move modules around, connect ports of modules together.
+
+The canvas should be "infinitely" scrollable, and you should be able to scroll around
+by clicking and dragging on empty canvas space.
+
+Each module should look and feel like a little window. A titlebar, some controls (knobs,
+sliders), maybe some displays (envelope graphs, spectra), an input port bay and an output
+port bay. Clicking and dragging the titlebar should be used to move modules around.
+
+Some of the modules we'll need include:
+- Trigger (clickable button or Spacebar to send trigger pulse on output TRIG)
+- Base (basic kick synth, pick oscillator wave, amplitude and frequency sweep/slope parameters, TRIG input, AUD mono output)
+- Click (short high frequency noise synth, TRIG in, AUD out)
+- Top (short dirty kick drum overtones synth, TRIG in, AUD out)
+- Sub (low frequency sub bass kick addon synth, less focused on frequency sweep, useful to add long bassy tail to overall kick, TRIG in, AUD out)
+- Filter (e.g. Moog-style resonant 12/24 dB 2/4 pole lowpass, plus simple bandpass and highpass, AUD in/out)
+- Distortion (various types, controls for strength / drive, AUD in/out)
+- Saturation (AUD in/out)
+- Spectra (e.g. noise vs. tonal balance, more? shaper?)
+- Dirt (experimental deterministic drum overtone generator with suitable controls, AUD in/out)
+- Reverb (Dattorro, usual set of controls, smear setting, AUD in/out)
+- Delay (echoes, feedback, dampening, etc. AUD in/out)
+- Envelope (ADSR sliders, graph view, slope settings (lin log exp), TRIG in, AUD in/out)
+- Ducker (knobs for delay, attack, hold, release, slope, CTRL mono audio in, AUD in/out, ducks (lowers volume of) AUD in according to CTRL in signal strength)
+- Limiter (basic compressor/limiter with makeup gain, AUD in/out)
+- Amp (super simple signal amp, knob for amplification factor, range perhaps 0.0 to 5.0?, AUD in/out)
+- Output (output to system audio, AUD in)
+
+All ports on modules should allow multiple connections (summed) where sensible, e.g. you
+should be able to hook up the AUD outputs of 3 Base modules directly to the single AUD input
+of a single Output module, and a single Trigger module should be able to connect its TRIG output
+to any number of TRIG inputs.
+
+For inspiration, WebSearch for things like "techno kick synthesis", "EDM kick synthesis", 
+"techno kick builder", "audio distortion algorithms", "audio saturation algorithms",
+"spectral shaping algorithm", "overtone generation", "sidechain ducking compression",
+and anything else you come up with.
+
+Also need the ability to save current preset/session to a .json file.
+
+I'll leave the name of the new machine to you. Have fun!
