@@ -1,0 +1,4 @@
+Prompt was lost unfortunately. These chat messages remain:
+
+> bad om en klon av pearl/behringer syncussion sy-1
+> jag bad om rust + dioxus -> en webapp och en native app
