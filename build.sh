@@ -72,6 +72,10 @@ function list_dirs() {
     find . -mindepth 1 -maxdepth 1 -type d ! -name .git -printf '%f\n' | sort
 }
 
+function list_dirs_reverse() {
+    find . -mindepth 1 -maxdepth 1 -type d ! -name .git -printf '%f\n' | sort --reverse
+}
+
 function list_files() {
     find . -mindepth 1 -maxdepth 1 -type f ! -name index.html -printf '%f\n' | sort
 }
@@ -83,7 +87,7 @@ function build_root() {
     rows=""
     count=0
 
-    for dir in $(list_dirs); do
+    for dir in $(list_dirs_reverse); do
         split_name "${dir}"
         rows+="$(row "./$(escape_html "${dir}")/" "${DATE}" "$(escape_html "${NAME}")" '<span class="arrow">&rarr;</span>')"$'\n'
         count=$((count + 1))
