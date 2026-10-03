@@ -1,0 +1,43 @@
+Let's build a techno session groovebox. Rust/Dioxus, build targets web (WebAudio) and desktop (PulseAudio)
+
+Chainnels:
+- Kick synth, pitch, decay, sub, sub decay, drum hit harmonics (non-tonal), distortion, rumble reverb (ducked by the kick itself) with its own strong eq
+- Closed hihat synth, pitch, attack, decay
+- Open hihat
+- Ride hihat
+- Snare
+- Clap
+- Low tom
+- Mid tom
+- High tom
+- Low conga
+- Mid conga
+- High conga
+- FM stab synth - three-voice chord
+
+All channels have synth-params randomization button, solo, mute, lo/mid/hi EQ and sends to a master tempo-synced delay and a master reverb
+
+Master DJ filter (single knob lowpass-bandpass-highpass sweep) similar to SuperFilter on the MC101/MC707
+
+Transport:
+- Play/pause
+- BPM
+- Swing
+
+Per-channel step sequencer:
+- Similar to Roland TR gear (row of 16 buttons shared by all channels, pick channel first then use row of buttons)
+- Ability to go up to 128 steps like the MC101/MC707, i.e. 1-8 pages of 16 steps
+- Per-step velocity/amplitude, ability to draw curve
+- Per-step pitch adjustment
+- Per-step probability
+- Polyrhythm, i.e. selecting any step lower than the step length to be the loop point (looping back to start)
+- Copy/paste functionality to e.g. rapidly duplicate 16 steps into 32 and so on
+- Three variations A/B/C, each holding its own 16-128 step sequence, cued and tempo-synced when switching (switch when currently playing step sequence would have looped)
+- Randomization features
+
+Master effects:
+- As mentioned above: master delay, master reverb, DJ filter
+- Sidechain compressor ("ducker") automatically wired to use the kick as control signal to duck everything else
+- Limiter with makeup gain
+
+You pick the name. Have fun!
