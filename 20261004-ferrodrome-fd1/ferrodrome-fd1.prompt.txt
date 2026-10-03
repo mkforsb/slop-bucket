@@ -1,0 +1,59 @@
+
+❯ First grab a copy of the public repos                                         
+  https://github.com/mkforsb/xenokussion-xk1-slop,                              
+  https://github.com/mkforsb/palmkussion-pk1-slop,                              
+  https://github.com/mkforsb/xenopalm-xp1-slop                                  
+                                                                                
+  I'd like to build another highly experimental synth + sequencer using similar 
+  architecture and design, maybe some of of parts of the synth engines, as the  
+  three aforementioned repos. Rust/Dioxus, Web with WebAudio, Desktop with      
+  PulseAudio. A Makefile with make web -> dx build --release --web, and make    
+  desktop, and so on.                                                           
+                                                                                
+  Main idea: Industrial Machine Hall Synth/Sequencer                            
+  - A set of machines (each is one or more synths + preset for each,            
+  essentially), e.g. "Conveyor", "Pump", "Crankshaft", "Transformer", "Servo",  
+  "Press", and so on,                                                           
+  - Each machine has some reasonable parameters, e.g. Conveyor could have       
+  parameters for ramp up/down time, pitch/frequency at steady-state, rattle,    
+  whirr? These are mapped to the parameters of the underlying synth(s)          
+  - A sequencer where you can add machines, each getting a track (row) onto     
+  which you can draw the steps over which the machine is active (thus making    
+  noise). Needs to support/understand a machine being active across the loop    
+  point (e.g. two last and two first steps = four steps of being active)        
+  - Randomization features: an RND button to just randomize absolutely          
+  everything, a VARIANCE knob on each machine to provide constant subtle        
+  randomness that stays centered on the initial setting (doesn't drift away to  
+  extremes), and the old MUTATE [0..RND] knob that mutates associated           
+  parameters (e.g. the parameters of a single machine) when a new "hit" or      
+  "active period" of those parameters is trigged. This time we're also going to 
+  add in randomization locking/opt-out on ALL parameters, suggestion being to   
+  use CTRL-click on any knob/slider/button locking/unlocking that parameter     
+  (indicated with padlock icon, just like in Xenopalm).                         
+  - Master tempo (BPM)                                                          
+  - Per-track/machine variable sequence length, maybe something like 1-128      
+  steps.                                                                        
+  - Per-track/machine Reverb (with EQ) and Delay                                
+  - Master Reverb and Delay                                                     
+                                                                                
+  For inspiration you could WebSearch for e.g. "industrial machine hall sounds  
+  analysis", "industrial machine sound effect synthesis", "machine drone sound  
+  synth", "metallic sound effect synthesis", "engine hum sound synthesis",      
+  "rhythmic machine sound analysis" and so on.                                  
+                                                                                
+  As usual I'll leave the name of the project to you. Have fun!                 
+
+  -----------------------------------------------------------------------------------
+
+❯ This thing is so much fun! One more feature: a per-track/machine EQ and       
+  filter (12/24dB Moog + bandpass + hipass) section!   
+
+  -----------------------------------------------------------------------------------
+
+❯ Getting quite a bit of clicks (often very rapid succession) when combining an 
+  LP24 or LP12 filter with an EQ boosting the low end.                          
+                                                                                
+  See @screen_20261003T234206.png for my setup with a single Conveyor, as you   
+  can see I have both the master volume and the machine volume down quite a     
+  bit, then check out @clicks-filter-eq-problem.wav, the volume is really low   
+  but you should be able to detect some high frequency clicks in there  
