@@ -1,0 +1,12 @@
+❯ First grab the public repo https://github.com/mkforsb/xenokussion-xk1-slop
+
+  I want us to build something similar (Rust/Dioxus, Web/WebAudio, Desktop/PulseAudio), but with the following twists:
+
+  - Completely focused on bassy percussive sounds, all engines replaced by various concoctions of VA/FM/Wavetable synths suitable for bassy sounds. Synths can
+  have multiple oscillators tuned differently, tuning is free (not chromatic)
+  - Each of the two channels gets a filter (12/24 dB Moog, bandpass, hipass) and an EQ with a generous range in the low end. We keep the reverbs as well.
+  - Each of the two channels also gets a chorus effect for extra wide hollow bass, and a saturator for obvious reasons
+  - We keep the MUTATE knobs and randomization features, but we add parameter locking for every mutatable parameter, triggered/toggled by Ctrl-clicking the
+  knob/slider/button/widget in the UI
+
+  Feel free to install anything you need and run any experiments you want.
