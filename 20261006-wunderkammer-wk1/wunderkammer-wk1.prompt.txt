@@ -1,0 +1,17 @@
+❯ First grab the public repo https://github.com/mkforsb/xenokussion-xk1-slop
+
+  Taking inspiration from the tech, look, and feel of Xenokussion (Rust/Dioxus, Web/WebAudio, Desktop/PulseAudio),
+
+  I want you to create something COMPLETELY DIFFERENT. I want to be SURPRISED AND SHOCKED. Atleast every 3rd sound
+  should make me go WHAT. WHAT IS THIS. WHO WOULD EVEN THINK OF SOMETHING LIKE THIS. It should do this while also
+  making sounds that aren't entirely unpleasant to listen to. Aim for "bewilderingly interesting" rather than
+  "just horrific noise". At almost every step of implementing any synthesis you should stop and think "could I do
+  this in a more unusual way?"
+
+  Sounds do not need to be percussive, but some could be.
+
+  Keep the randomization features, but add parameter locking for every mutatable parameter, enabled by Ctrl-clicking the knob/slider/button/widget.
+
+  Keep the master reverbs.
+
+  I'll leave the name of the synth to you. Go now. Be brave. And don't forget to have fun.
