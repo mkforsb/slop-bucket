@@ -1,0 +1,10 @@
+❯  And now a challenge:
+
+    - Grab the public repo https://github.com/mkforsb/ferrodrome-fd1-slop
+    - Taking inspiration from Subkussion-SB2 and Ferrodrome-FD1, create Ferrosub-FS1, an industrial machine hall synthesizer-sequencer that focuses on creating
+  dark, bassy, rhythmical machinery sounds sounding like they come from an engine room a couple of floor below, or a large assembly hall in the next building.
+
+
+    Picture hearing the cyclical sounds of a gigantic diesel ship engine from your bunkbed 60 meters away.
+
+    Go!
