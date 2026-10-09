@@ -1,0 +1,3 @@
+❯ Awesome sounds already, but let's make one more attempt to really get bassy, let's make a copy into `subkussion-sb2-slop/` and try even harder to make most       
+  random (both MUTATE knobs at RND) hits sound even more bassy by essentially making the synth engines even more bass-oriented, a bit longer envelopes in general,  
+  get some extra sub bass synthesis going. Time to bass it up!
