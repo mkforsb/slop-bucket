@@ -1,0 +1,12 @@
+❯ Let's create a PS1-style demake of Dark Souls, starting with the Undead Asylum area and the Asylum Demon boss fight.
+
+  We'll use Rust and Dioxus targetting a web build, WebGL, WebAudio.
+
+  We'll initially have only a basic knight character with a medium-sized sword and shield, but try to keep in mind that we'll add lots more stuff later, so design
+  for that. We'll implement the full basic moveset with light and heavy attacks (and chains), block and dodge.
+
+  Feel free to:
+  - Install anything you need.
+  - WebSearch anything you need, e.g about Dark Souls, perhaps a walkthrough of the Undead Asylum, PS1/PSX demakes, PSX texture aesthetics.
+  - Download one or more YouTube videos from playthroughs of the Undead Asylum and Asylum Demon boss fight.
+  - Change names and terms to avoid copyright infringement.

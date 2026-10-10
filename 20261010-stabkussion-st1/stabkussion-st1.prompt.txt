@@ -1,0 +1,17 @@
+#1
+First grab the public repo https://github.com/mkforsb/subkussion-sb2-slop
+
+I'd like you to build a similar machine, but this time completely focused on bassy techno tonal (albeit at times inharmonic) stabs.
+
+- I've prepared a set of example sounds in @examples/
+- We'll probably want a mix of fairly simple FM and some Virtual Analog engines, perhaps some crossovers
+- Tuning needs to be free, not chromatic. Each engine needs to have at least two oscillators with individual tuning
+- We keep all filters, EQ, reverbs, randomization with locking etc
+
+Grab the repo and take a look, have a think, and get your bearings, then pause and let me set a goal.
+
+#2
+/goal implement the synth, install whatever you need along the way, keep iterating until you're confident that the synth is able to reproduce within reason the example sounds, and confident that the synth produces something with the same characteristics as one or more example sounds on practically every randomized hit (both MUTATE knobs at RND)
+
+#3
+Also feel free to WebSearch e.g. "techno bass stabs fm" and similar

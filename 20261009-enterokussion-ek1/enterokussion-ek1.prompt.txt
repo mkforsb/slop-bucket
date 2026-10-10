@@ -1,0 +1,8 @@
+❯ Hey! First grab a copy of the public repo https://github.com/mkforsb/subkussion-sb2-slop
+
+  I'd like you to build a new synth heavily inspired by Xenokussion XK-1, with the following changes:
+
+  - Focus on non-percussive growls, grumbles, squelches, and squeaks. Think "alien intestinal sound generator", "biological cacophony", "digestion simulator" etc.
+  Not every sound needs to be a fart, but farts are definitely allowed. Celebrated, even.
+  - Have quite a range of amplitude envelopes, i.e. allow longer lengths and far longer attacks/ramp-ups than the percussion-focused Subkussion.
+  - Like I said, one guiding description should be "alien intestines", so please be encouraged to invest strange alien intestinal processes and their sounds. 
