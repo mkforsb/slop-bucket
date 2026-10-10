@@ -1,3 +1,4 @@
+#1
 ❯ Let's create a PS1-style demake of Dark Souls, starting with the Undead Asylum area and the Asylum Demon boss fight.
 
   We'll use Rust and Dioxus targetting a web build, WebGL, WebAudio.
@@ -10,3 +11,31 @@
   - WebSearch anything you need, e.g about Dark Souls, perhaps a walkthrough of the Undead Asylum, PS1/PSX demakes, PSX texture aesthetics.
   - Download one or more YouTube videos from playthroughs of the Undead Asylum and Asylum Demon boss fight.
   - Change names and terms to avoid copyright infringement.
+
+#2
+Loading the game in the browser first renders a small view in the top left corner, this small
+view then rapidly expands/zooms in to cover the full view, then keeps on expanding until all
+you see is basically a single pixel. I can see there's some text underneath the rendered view
+but it gets pushed off the screen so fast I can't see what it says
+
+#3
+Keyboard/mouse controls seem a bit broken, it's like there's a fairly high probability of an
+input not being registered at all. For example, opening/closing the text box for runes on the
+ground sometimes takes like 5 presses of E, most attempts at dodging with space does nothing,
+and sword swings are similarly inconsistent/unreliable. Tried in latest Chromium and Firefox.
+Haven't tested gamepad yet (awesome that you added gamepad support btw)
+
+#4
+Fix works great!
+
+Next problem: triggering the pyre for some reason brings up the pause menu, clicking resume
+instantly pops the pause menu back up again, only way to break the loop is save & quit to
+title and continuing.
+
+#5
+That fix also worked great!
+
+Next problem! :)
+
+Traversing the mist doesn't work! The animation triggers but the character doesn't actually
+move through.
