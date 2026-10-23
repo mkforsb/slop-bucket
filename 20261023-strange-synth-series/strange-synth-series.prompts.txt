@@ -1,0 +1,28 @@
+strange-synth-001:
+strange-synth-002:
+strange-synth-003:
+    Let's build a very strange synth. Rust/Dioxus focusing on a webapp target, WebAudio.
+
+      WebSearch for strange synth ideas.
+
+      Requirements:
+      - At least 30 strange parameters
+      - At least 50 factory presets
+      - A button \"RND\" that mutates every parameter except for locked ones
+      - Shift-click knobs/widgets to lock their parameter
+      - A master filter (12/24dB Moog, bandpass, hipass), EQ (lowcut, lo, mid, hi, hicut), and end-of-chain reverb (Dattorro algo)
+      - Cool visuals
+
+      Wishlist of factory presets, the names of which can inspire the synth:
+      - Metal-on-metal screeching industrial elevator
+      - Struck bowed metal sheet
+      - UFO engine room
+      - T-rex Roar
+      - Godzilla Laser Beam
+      - Resonating metal clothes rack
+      - Hitting muted strings with a plastic pipe
+      - Haunting singing glass
+      - Thoughts of the machine
+
+
+    You're free to install anything you need in this sandbox. Keep all outputs in this folder. Small logical commits is encouraged.
