@@ -1,0 +1,34 @@
+❯ Let's try reverse-engineering / porting / building a modern Rust port of the old DOS game Speed Haste.
+
+  Our main targets will be a web version using Dioxus, WebAudio, and likely Three.js, and a "native" Linux version using SDL3, likely with PulseAudio (or whatever
+  SDL3 uses by default), sharing as much code and misc stuff as possible between them.
+
+  We'll try to keep our Rust code lean and fairly minimal. No grand abstractions or frameworks, but also not unreadable.
+
+  Since this is a copyrighted game, we'll not ship the main content blob SPEEDH.JCL, but rather need to have a facility in both the web and native versions for
+  the user to provide the file. I.e. the web version could start with a screen asking the user to load SPEEDH.JCL, while the native version could take a path to
+  the file as a command line argument.
+
+  References:
+  - @refs/full-game-dos/, the full DOS release from 1995.
+  - @refs/partial-original-source/, partial original DOS source code published by the lead dev. See the README for limitations.
+
+  Additional tools:
+  - Git. Make a repo, commit work in logical chunks with helpful messages.
+  - Reverse Engineer Anything: https://github.com/morluto/rea, we'll install this immediately and use it for digging around in the original binary release. This
+  project is also a bit of a test to see how well REA works.
+  - Rust Analyzer LSP plugin for Claude Code (that's you!), should be installed and ready to go. Try to have the code in a state of generally compiling without
+  warnings at all times.
+
+  Design considerations:
+  - The initial target is a faithful port (e.g. low resolution, keyboard controls), but keep in mind we'll likely want to extend this with some graphical upgrades
+  (e.g. higher resolutions, texture filtering, texture replacements?) and ergonomics (e.g. modern gamepad input.) Try to make design decisions that will make
+  such extensions easier rather than harder.
+
+  Ground rules:
+  - Keep all project output in this workdir and/or subdirectories of it.
+  - This is a Debian sandbox, you're free to install anything you need. Even downloading and building things from source is fine.
+  - Keep a continuously updated work log and TODO in PORTING.md. Make sure to include use of REA here as that's an interesting part of the project.
+  - At 90%+ session token limit, pause the work and author a handoff document in HANDOFF.md for the next session to start from after a /clear.
+
+  And if possible, try to have fun! Go!
