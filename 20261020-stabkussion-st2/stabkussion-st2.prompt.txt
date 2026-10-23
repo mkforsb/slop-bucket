@@ -1,0 +1,15 @@
+First grab the public repo https://github.com/mkforsb/stabkussion-st1-slop
+
+I'd like us to build the successor, Stabkussion ST-2.
+
+The premise is simply "more is better". Our objective will be to double the amount of synthesis-related
+knobs in every engine by adding meaningful features that a user would want to control, and to add a new
+cross-modulation panel that enables various weird and wonderful ways for the two synths to modulate and
+circuit-bend each other. We'll keep all the randomization features and parameter locking.
+
+WebSearch is strongly encouraged, inspiration could perhaps be found in modern synths like Serum and Vital,
+or more experimental stuff in stuff from Erica Synths and similar.
+
+Keep all files in our current workdir, don't write directly to /mnt
+
+Try to have fun! Go!
